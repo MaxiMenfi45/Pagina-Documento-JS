@@ -1,0 +1,143 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#main-doc {
+  display: flex;
+}
+
+#navbar {
+  z-index: 1;
+  margin: 5px auto auto auto;
+  padding-top: 10px;
+  display: block;
+  position: fixed;
+  overflow-y: auto;
+  width: 300px;
+  align-items: center;
+  height: auto;
+  display: block;
+
+}
+#navbar header{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+}
+
+
+
+#navbar ul li {
+  border-top: 4px solid rgba(26, 26, 48, 0.381);
+  font-size: 20px;
+  list-style: none;
+  margin: 15px 20px auto -40px; 
+  text-align: left;
+  padding-left: 10%;
+}
+
+#nothing {
+  height: 200px;
+  width: 300px;
+}
+
+#body-section {
+  flex: 3;
+  border-left: 5px solid rgba(26, 26, 48, 0.381);
+  margin-left: -20px;
+  margin-right: 15px;
+  padding: 2%; 
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: bold;
+}
+
+#body-section header{
+  font-size: 25px;
+}
+
+#body-section:not(header){
+  font-size: 20px;
+  margin-top: 5px;
+
+}
+
+.paragraph{
+
+  margin-left: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 15px;
+}
+
+#body-section ul li {
+
+  margin-left: 35px;
+  font-size: 15px;
+}
+
+#body-section code{
+  margin-left: 25px;
+  background-color: rgba(26, 26, 48, 0.101);
+  padding: 5px;
+  display: block;
+  font-size: 15px;
+}
+a{
+ text-decoration: none;
+ color: rgba(26, 26, 48, 0.681);
+}
+
+a:active{
+  color: grey;
+  background-color: transparent;
+}
+
+@media screen  and (max-width:768px){
+  #nothing{
+    display: none;
+  }
+
+  #main-doc{
+    flex-direction: column;
+   
+  }
+
+  #navbar{
+    width: 100%;
+    overflow:auto;
+    height: 200px;
+    position: static;
+    margin: 5px auto 5px auto;
+  }
+
+  #navbar ul li{
+    border: none;
+    border-bottom: 2px solid rgba(26, 26, 48, 0.681);
+    margin-right:-1px ;
+  }
+  #navbar ul{
+    border: 3px solid rgba(26, 26, 48, 0.681);
+  }
+  #navbar ul li:last-of-type{
+    border-bottom: none;
+  }
+  
+
+  #body-section{
+    margin: 5px;
+    border: none;
+  }
+  
+
+
+}
+
+
+
+
+
+
+
+  
